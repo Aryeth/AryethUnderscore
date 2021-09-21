@@ -1,0 +1,62 @@
+body {
+    background-color: rgb(51, 45, 77);
+  }
+
+@font-face {
+    font-family: 'roboto_slabregular';
+    src: url('https://aryeth.github.io/AryethUnderscore/resources/styles/fonts/RobotoSlabRegular.eot');
+    src: url('https://aryeth.github.io/AryethUnderscore/resources/styles/fonts/RobotoSlabRegular.eot?#iefix') format('embedded-opentype'),
+         url('https://aryeth.github.io/AryethUnderscore/resources/styles/fonts/RobotoSlabRegular.woff2') format('woff2'),
+         url('https://aryeth.github.io/AryethUnderscore/resources/styles/fonts/RobotoSlabRegular.woff') format('woff'),
+         url('https://aryeth.github.io/AryethUnderscore/resources/styles/fonts/RobotoSlabRegular.ttf') format('truetype'),
+         url('https://aryeth.github.io/AryethUnderscore/resources/styles/fonts/RobotoSlabRegular.svg#roboto_slabregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+/*adding custom style font*/
+* {
+
+    text-align: center;
+    font-family: 'roboto_slabregular', Arial, sans-serif;
+}
+
+h1 {
+    font-weight:900;
+    font-style:normal;
+}
+
+/*links and <a> style*/
+a {
+    font-family: 'roboto_slabregular', Arial, sans-serif;
+    font-weight:17;
+    font-style:normal;
+    text-decoration: none;
+    font-size: 150%;
+}
+ /* unvisited link */
+a:link {
+    color: rgb(0, 0, 0);
+}
+/* visited link */
+a:visited {
+color: #000000;
+}
+/* mouse over link */
+a:hover {
+ color: #00d9ff;
+}
+/* selected link */
+a:active {
+ color: #fc6de4
+}
