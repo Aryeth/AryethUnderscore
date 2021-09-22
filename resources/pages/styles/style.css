@@ -60,3 +60,17 @@ a:hover {
 a:active {
  color: #fc6de4
 }
+
+/*fadein / fadout animations*/
+body {
+    animation: myfadeInAnimation 5s;
+}
+
+@keyframe myfadeInAnimation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@-webkit-keyframes myfadeInAnimation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
