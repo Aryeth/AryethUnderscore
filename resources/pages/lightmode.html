@@ -3,11 +3,24 @@
 <head>
     <title>🤡</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="styles/videoStyle.css">
+    <script>
+function handleFirstPlay(event) {
+  if(hasPlayed === false) {
+    hasPlayed = true;
+
+    let vid = event.target;
+
+    vid.onplay = null;
+
+    // Start whatever you need to do after first playback has started
+  }
+}
+    </script>
 </head>
-<body>
-    <video autoplay = "autoplay">
-        <source src="assets/videos/UwU.mp4">
+<div>
+    <video autoplay loop id="myVideo" onclick="this.play()">
+        <source src="assets/videos/lightMode.mp4" type="video/mp4">
     </video>
-</body>
+</div>
 </html>
