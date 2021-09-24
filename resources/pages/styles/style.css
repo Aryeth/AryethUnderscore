@@ -14,7 +14,20 @@ body {
     font-style: normal;
 
 }
-
+/*everything classed wrapper will be centered*/
+#wrapper{
+    text-align: center;
+}
+.button {
+    background-color: rgb(66, 60, 92);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
 .vertical-center {
     margin: 0;
     position: absolute;
@@ -26,12 +39,11 @@ body {
 
 /*adding custom style font*/
 * {
-
-    text-align: center;
     font-family: 'roboto_slabregular', Arial, sans-serif;
 }
 
 h1 {
+    text-align: center;
     font-weight:900;
     font-style:normal;
 }
