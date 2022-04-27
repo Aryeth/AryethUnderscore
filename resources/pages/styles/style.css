@@ -4,12 +4,7 @@ body {
 
 @font-face {
     font-family: 'roboto_slabregular';
-    src: url('https://aryeth.github.io/AryethUnderscore/resources/styles/fonts/RobotoSlabRegular.eot');
-    src: url('https://aryeth.github.io/AryethUnderscore/resources/styles/fonts/RobotoSlabRegular.eot?#iefix') format('embedded-opentype'),
-         url('https://aryeth.github.io/AryethUnderscore/resources/styles/fonts/RobotoSlabRegular.woff2') format('woff2'),
-         url('https://aryeth.github.io/AryethUnderscore/resources/styles/fonts/RobotoSlabRegular.woff') format('woff'),
-         url('https://aryeth.github.io/AryethUnderscore/resources/styles/fonts/RobotoSlabRegular.ttf') format('truetype'),
-         url('https://aryeth.github.io/AryethUnderscore/resources/styles/fonts/RobotoSlabRegular.svg#roboto_slabregular') format('svg');
+    src: url('fonts/robotoslab_regular_macroman/RobotoSlabRegular.woff');
     font-weight: normal;
     font-style: normal;
 
@@ -17,6 +12,11 @@ body {
 /*everything classed wrapper will be centered*/
 #wrapper{
     text-align: center;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, 50%);
 }
 .button {
     background-color: rgb(66, 60, 92);
@@ -85,4 +85,77 @@ body {
 @-webkit-keyframes myfadeInAnimation {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+.testthing {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%,0%);
+}
+.thingface {
+    width: 300px;
+    height: 300px;
+    background: #000000;
+    position: absolute;
+    border-radius: 50% 50% 50% 50%;
+    top: -100px;
+    left: -147px;
+}
+.mask1 {
+    width: 300px;
+    /*height: 300px;*/
+    height: 250px;
+    border-radius: 50% 50% 50% 50%;
+    position: absolute;
+    background: rgb(51, 45, 77);
+    /*background: white;*/
+    /*top: -150px;*/
+    top: -100px;
+    left: -147px;   
+}
+.mask2 {
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+    position: absolute;
+    border-radius: 50% 50% 50% 50%;
+    top: -100px;
+    left: -147px;
+    box-shadow: 0px 0px 0px 55px #332d4d;
+}
+.lash1{
+    width: 40px;
+    height: 80px;
+    background: #000000;
+    position: absolute;
+    top: 170px;
+    left: -15px;
+}
+.lash2 {
+        width: 40px;
+    height: 80px;
+    background: #000000;
+    position: absolute;
+    top: 130px;
+    left: -120px;
+    transform: rotate(35deg);
+}
+.lash3 {
+    width: 40px;
+    height: 80px;
+    background: #000000;
+    position: absolute;
+    top: 130px;
+    left: 90px;
+    transform: rotate(-35deg);
+}
+.iris {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: -70px;
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    background: #000000;
+    
 }
