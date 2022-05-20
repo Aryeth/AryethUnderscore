@@ -12,4 +12,3 @@ var iris = document.getElementsByClassName("iris");
         }
     }
  
-    
